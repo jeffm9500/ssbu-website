@@ -503,7 +503,7 @@ textarea { height: 168px; }
 }
 
 figure.effect-bubba {
-    background-color: #46a5f3;
+    background-color: #60aae600; /* Character background */
 }
 
 .cd-hero-slider .selected .cd-full-width figure.effect-bubba h2.tm-figure-title {
