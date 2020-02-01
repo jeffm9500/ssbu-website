@@ -534,7 +534,7 @@ figure.effect-bubba p {
 	transform: translate3d(0,20px,0);
 }
 
-figure.effect-bubba:hover img {
+figure.effect-bubba:hover img { /* makes character darker/lighter on hover*/
     opacity: 0.4;
 }
 
@@ -549,6 +549,7 @@ figure.effect-bubba figcaption::after {
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
+	
 }
 
 figure.effect-bubba figcaption::before {
