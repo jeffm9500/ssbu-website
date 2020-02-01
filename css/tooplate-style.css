@@ -600,6 +600,12 @@ figure.effect-bubba:hover p {
 
 .cd-hero-slider .selected .cd-full-width h2.tm-figure-title {
 	margin-bottom: 0;
+	font-weight: 400;
+	opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,10px,0) scale(1.5);
+    transform: translate3d(0,10px,0) scale(1.5);
 }
 .cd-hero-slider .selected .cd-full-width p.tm-figure-description {
 	font-weight: 400;

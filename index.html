@@ -35,7 +35,14 @@ http://www.tooplate.com/view/2086-multi-color
 </head>
 
     <body>
-        
+        <?php
+			$file = fopen("fighterList.txt","r");
+			while(! feof($file))
+  			{
+  				echo fgets($file). "<br />";
+ 			}
+			fclose($file);
+		?>
         <!-- Content -->
         <div class="cd-hero">
 
