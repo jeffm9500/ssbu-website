@@ -573,14 +573,6 @@ figure.effect-bubba h2 {
 	transform: translate3d(0,-20px,0);
 }
 
-figure.effect-bubba p {
-	padding: 20px 1.5em;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(0,20px,0);
-	transform: translate3d(0,20px,0);
-}
 
 figure.effect-bubba:hover figcaption::before,
 figure.effect-bubba:hover figcaption::after {
