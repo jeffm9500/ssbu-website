@@ -87,24 +87,44 @@ http://www.tooplate.com/view/2086-multi-color
                                         <!--<p class="tm-text">Select your fighter!
                                         </p> -->
                                     </div>
-                                    <div class="grid-item">
+                                    <div class="grid-item" onclick="openTab('bowser')">
                                         <figure class="effect-bubba">
                                             <img src="img/Bowser-tn.png" alt="Image" class="img-fluid tm-img">
                                             <figcaption>
-                                                <h2 class="tm-figure-title"><span>Bowser</span></h2>
-                                                <a href="img/Bowser.png">View more</a>
+                                                <h2 class="tm-figure-title">Image <span>One</span></h2>
+                                                <p class="tm-figure-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                             </figcaption>           
                                         </figure>
                                     </div>
-                                    <div class="grid-item">
+
+                                    <div id="bowser" class="containerTab" style="display:none;background:rgba(56, 181, 230, 0);">
+                                        <!-- If you want the ability to close the container, add a close button -->
+                                        <h2>Bowser Box</h2>
+                                        <p>Lorem ipsum..</p>
+                                        <figure class = "Nicks-Fig">
+                                            <img src = "img/Bowser.png" alt="Image" class="img-fluid tm-img">
+                                        </figure>
+                                    </div>
+
+                                    <div class="grid-item" onclick="openTab('mario')">
                                         <figure class="effect-bubba">
                                             <img src="img/Dr._Mario-tn.png" alt="Image" class="img-fluid tm-img">
                                             <figcaption>
                                                 <h2 class="tm-figure-title">Image <span>Two</span></h2>
-                                                <a href="img/Dr._Mario.png">View more</a>
-                                            </figcaption>
+                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
+                                             </figcaption>
                                         </figure>
                                     </div>
+
+                                    <div id="mario" class="containerTab" style="display:none;background:rgba(56, 182, 230, 0);">
+                                        <!-- If you want the ability to close the container, add a close button -->
+                                        <h2>Mario Box</h2>
+                                        <p>Lorem ipsum..</p>
+                                        <figure class = "Nicks-Fig">
+                                            <img src = "img/Mario.png" alt="Image" class="img-fluid tm-img">
+                                        </figure>
+                                    </div>
+
                                     <div class="grid-item">
                                         <figure class="effect-bubba">
                                             <img src="img/tm-img-03-tn.jpg" alt="Image" class="img-fluid tm-img">
@@ -837,7 +857,7 @@ http://www.tooplate.com/view/2086-multi-color
                 adjustHeightOfPage(1); // Adjust page height
 
                 /* Gallery One pop up
-                -----------------------------------------*/
+                -----------------------------------------
                 $('.gallery-one').magnificPopup({
                     delegate: 'a', // child items selector, by clicking on it popup will open
                     type: 'image',
@@ -923,6 +943,22 @@ http://www.tooplate.com/view/2086-multi-color
             $(function() {                
                 loadGoogleMap(); // Google Map
             });
+
+            function openTab(tabName) {
+                var i, x, flag;
+                if (document.getElementById(tabName).style.display === "block") {
+                    flag = 1;
+                }
+                x = document.getElementsByClassName("containerTab");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                if (flag === 1) {
+                    document.getElementById(tabName).style.display = "none";
+                } else {
+                    document.getElementById(tabName).style.display = "block";
+                }
+            }
 
         </script>            
 
