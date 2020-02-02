@@ -80,6 +80,7 @@ a:focus {
 	padding-right: 10px;
 	background-color: rgba(255,255,255,0.7);
 	overflow: auto;
+	
 }
 
 .navbar-toggler {
@@ -425,6 +426,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 	width: 85%;
 	text-align: left;
 	column-count: 1;
+	position: relative;
 }
 
 .myImage{
@@ -455,7 +457,12 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 
 .tm-img-gallery-container {
 	max-width: 320px;
-    margin: 0 auto;
+	margin: 0 auto;
+	position: fixed;
+	top: 8%;
+	left: 5%;
+	right: 5%;
+	
 }
 
 .tm-img-gallery {
