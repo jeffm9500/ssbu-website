@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	
     <title>SSBU Companion</title>
     <style>
         .zoom {
@@ -1478,6 +1478,16 @@ http://www.tooplate.com/view/2086-multi-color
                                                     
                                                 </figcaption>
                                             </figure>
+										</div>
+										<div class="grid-item" onClick="openTab('terry')">
+                                            <figure class="effect-bubba">
+                                                <img src="img/Terry-tn.png" alt="Image" class="img-fluid tm-img">
+                                                <figcaption>
+                                                    <h2 class="tm-figure-title"> <span>Terry</span></h2>
+                                                    
+                                                    
+                                                </figcaption>
+                                            </figure>
                                         </div>
                                          <div class="grid-item" onClick="openTab('byleth')">
                                             <figure class="effect-bubba">
@@ -1554,7 +1564,14 @@ http://www.tooplate.com/view/2086-multi-color
                                         <figure class = "Nicks-Fig">
                                             <img src = "img/Banjo_Kazooie.png" alt="Image" class="img-fluid tm-img">
                                         </figure>
-                                    </div>
+									</div>
+									<div id="terry" class="containerTab" style="display:none;background:rgba(56, 181, 230, 0);">
+                                        <!-- If you want the ability to close the container, add a close button -->
+                                        <h2>Bowser Boxo</h2>
+                                        <p>Lorem ipsum..</p>
+                                        <figure class = "Nicks-Fig">
+                                            <img src = "img/Terry.png" alt="Image" class="img-fluid tm-img">
+                                        </figure>
                                     <div id="byleth" class="containerTab" style="display:none;background:rgba(56, 181, 230, 0);">
                                         <!-- If you want the ability to close the container, add a close button -->
                                         <h2>Bowser Boxo</h2>
@@ -1626,10 +1643,12 @@ http://www.tooplate.com/view/2086-multi-color
                                         <p class="tm-text"><span class="tm-white">Donec dapibus dui sed nisi fermentum, a sollicitudin lorem fringilla. Integer nec pharetra turpis, eu sagittis ipsum. Cras dignissim lacus dolor.</span>
                                         </p>                                     
 									</div>
-									<iframe src="http://www.youtube.com/embed/W7qWa52k-nE"
-  									 width="560" height="315" frameborder="0" allowfullscreen></iframe>
-                                                                                                                         
-                                </div>                                 
+										   
+									
+									<div id="youtubeDiv"></div>
+									<script>ytEmbed.init({'block':'youtubeDiv','type':'search','q':'baby laughing','results':'4','meta':'true'});</script>
+									
+								</div>                                 
                             </div> <!-- .tm-img-gallery-container -->
                         </div>         
                     </div>  
