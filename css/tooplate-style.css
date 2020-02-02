@@ -407,11 +407,22 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 	color: white;
 }
 
-.row:after {
+.row::after {
 	content: "";
 	display: table;
 	clear: both;
 }
+
+.containerTab {
+
+}
+
+.last-item {
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+
 
 .grid-item {
 	margin-bottom: 20px;
@@ -523,7 +534,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 }
 
 figure.effect-bubba {
-    background-color: rgba(56, 181, 230, 0);
+    background-color: #46a5f300;
 }
 
 .cd-hero-slider .selected .cd-full-width figure.effect-bubba h2.tm-figure-title {
@@ -555,20 +566,20 @@ figure.effect-bubba p {
 }
 
 figure.effect-bubba:hover img {
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 figure.effect-bubba figcaption::before,
 figure.effect-bubba figcaption::after {
 	position: absolute;
-	top: 5px;
-	right: 5px;
-	bottom: 5px;
-	left: 5px;
+	top: 0px;
+	right: 0px;
+	bottom:0px;
+	left: 0px;
 	content: '';
 	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transition: opacity 0.65s, -webkit-transform 0.65s;
+	transition: opacity 0.65s, transform 0.65s;
 }
 
 figure.effect-bubba figcaption::before {
@@ -612,7 +623,7 @@ figure.effect-bubba:hover p {
     position: relative;
     display: block;
     max-width: 100%;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .cd-hero-slider h2 { font-size: 1.5em; }
@@ -620,6 +631,12 @@ figure.effect-bubba:hover p {
 
 .cd-hero-slider .selected .cd-full-width h2.tm-figure-title {
 	margin-bottom: 0;
+	font-weight: 400;
+	opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,10px,0) scale(1.5);
+    transform: translate3d(0,10px,0) scale(1.5);
 }
 .cd-hero-slider .selected .cd-full-width p.tm-figure-description {
 	font-weight: 400;
@@ -651,7 +668,7 @@ figure.effect-bubba:hover p {
 /*.tm-pad-t { padding-top: 40px; }*/
 .tm-white-box-margin-b { margin-bottom: 30px; }
 /*changed from 340px to 130px*/
-.grid-item { max-width: 120px; }
+.grid-item { max-width: 10%; }
 /*.tm-img-gallery-container-2 { max-width: 453px; }*/
 .tm-gallery-title span { width: 100%; }
 
