@@ -414,9 +414,26 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 	clear: both;
 }
 
-/*.containerTab {
+.containerTab {
+	margin-top: 15px;
+	margin-left: 8%;
+	margin-right: 8%;
+	margin-bottom: 10px;
+	display: none;
+	background: rgba(10, 63, 83, 0.521);
+	background-size: contain;
+	width: 85%;
+	text-align: left;
+	column-count: 1;
+}
 
-}*/
+.myImage{
+	max-width: 320px;
+	border: none;
+	  margin: 0 auto;
+	  margin-right: 50px;
+}
+
 
 .last-item {
 	margin-top: 150px;
@@ -463,7 +480,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
   	width: 100%;
   	height: auto;
   	border: none;
-  	margin: 0 auto;
+	margin: 0 auto;
 }
 
 .tm-textbox-padding { padding: 35px 30px; }
@@ -996,3 +1013,56 @@ figure.effect-bubba:hover p {
 	  border: 2px solid #ccc;
 	}
   }
+ /* Three columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+} 
