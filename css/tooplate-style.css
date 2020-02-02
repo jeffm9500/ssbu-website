@@ -595,6 +595,10 @@ figure.effect-bubba:hover p {
     opacity: 1;
 }
 
+.grid-item:hover{
+	transform:scale(1.3);
+}
+
 .cd-hero-slider h2 { font-size: 1.5em; }
 .cd-hero-slider p.tm-figure-description { font-size: 1rem; }
 
