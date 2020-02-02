@@ -2472,7 +2472,7 @@ http://www.tooplate.com/view/2086-multi-color
                             </div>
                         </div>
                     </div>
-                    </li>
+                    
                 </li>
 
                 <!-- Page 3 Gallery Three -->
@@ -2484,13 +2484,18 @@ http://www.tooplate.com/view/2086-multi-color
                                 <!-- Gallery Two pop up connected with JS code below -->
                                     
                                     <div class="tm-img-gallery-info-container">                                    
-                                        <h2 class="tm-text-title tm-gallery-title"><span class="tm-white">Search for character specific matchups</span></h2>
-                                        <p class="tm-text"><span class="tm-white">This is a paragraph.</span></p>                                     
+                                        <h2 class="tm-text-title tm-gallery-title">
+                                            <span class="tm-white">Search for character specific matchups</span>
+                                        </h2>
+                                        <p class="tm-text">
+                                            <span class="tm-white">This is a paragraph.</span>
+                                        </p>                                     
                                     </div>
                                     <div class="topnav">
-
                                         <input id="searchbar" type="text" placeholder="Search videos..">
-                                        <button type="submit" onclick="getVideo()"><i class="fa fa-search"></i></button>
+                                        <button type="submit" onclick="getVideo()">
+                                            <i class="fa fa-search"></i>
+                                        </button>
                                     </div>
                                     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
                                         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
@@ -2501,13 +2506,13 @@ http://www.tooplate.com/view/2086-multi-color
                                     <script src="js/video.js"></script>
                                     <iframe src=""></iframe>
                                     <h3>Video Title</h3>
-                                    <p class="description">Video Description<p>
+                                    <p class="description">Video Description</p>
                                     
 									
 								</div>                                 
                             </div> <!-- .tm-img-gallery-container -->
                         </div>         
-                    </div>  
+                    </div>
                 </li>
 
                 <!-- Page 4 About -->
@@ -2923,15 +2928,19 @@ http://www.tooplate.com/view/2086-multi-color
 
             function renderVote() {
                 var i, x, num;
-                var rand = 0;
+                var rand1 = 0;
+                var rand2 = 0;
                 x = document.getElementsByClassName("vote-item");
                 for (i = 0; i < x.length; i++) {
                     x[i].style.display = "none";
                 }
-                rand = randInt(79);
-                x[rand].style.display = 'block';
-                rand = randInt(79);
-                x[rand].style.display = 'block';
+                rand1 = randInt(79);
+                x[rand1].style.display = 'block';
+                do {
+                    rand2 = randInt(79);
+                }
+                while (rand1 === rand2);
+                x[rand2].style.display = 'block';
             }
 
             function randInt(max) {

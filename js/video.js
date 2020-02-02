@@ -5,7 +5,7 @@ function getVideo() {
       type: 'GET',
       url: 'https://www.googleapis.com/youtube/v3/search',
       data: {
-          key: 'AIzaSyDp5fHjmMvYDp9BwLvpCPf2lwAQg4BsTMU',
+          key: 'AIzaSyDoqPTMMQoIGAndhnX17aKH-Y4IyiH8elU',
           q: $("#searchbar").val(),
           part: 'snippet',
           maxResults: 1,
@@ -16,7 +16,7 @@ function getVideo() {
           embedVideo(data)
       },
       error: function(response){
-          console.log("Request Failed");
+          console.log("Request Failed")
       }
     });
   }
