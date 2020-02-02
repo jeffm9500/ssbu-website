@@ -447,7 +447,17 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 	width: 100%;
 	float: left;
 	transition: transform .30s;
-	max-width: 40%;
+	max-width: 50%;
+}
+
+.vote-item-new {
+	margin-bottom: 20px;
+	padding-left: 1px;
+	padding-right: 1px;
+	width: 100%;
+	float: left;
+	transition: transform .30s;
+	max-width: 50%;
 }
 
 .grid-item {
