@@ -51,7 +51,9 @@ Wii Fit Trainer
 Rosalina & Luma
 Little Mac
 Greninja
-Mii Fighter
+Mii Brawler
+Mii Gunner
+Mii Swordfighter
 Palutena
 Pac-Man
 Robin
@@ -74,4 +76,5 @@ Piranha Plant
 Joker
 Hero
 Banjo & Kazooie
+Terry
 Byleth
