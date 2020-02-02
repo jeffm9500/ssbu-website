@@ -12,6 +12,7 @@ body {
 	font-size: 17px;
 	font-weight: 300;
 	overflow-x: hidden;
+	overflow: auto;
 }
 
 
@@ -135,7 +136,7 @@ button:focus { outline: none; }
 .cd-hero-slider { height: 100vh; }
 .cd-hero-slider li { 
 	background-color: #2c343b;
-	list-style: none; 
+	list-style: none; /*THIS IS WHERE*/
 }
 
 /* Background & menu colors */
@@ -214,7 +215,7 @@ button:focus { outline: none; }
 
 /* footer */
 .tm-social-link {
-	background-color: rgba(255,255,255,0.40);
+	background-color: rgba(202, 8, 8, 0.959);
     color: black;
     display: inline-block;
     width: 35px;
@@ -230,11 +231,12 @@ button:focus { outline: none; }
 	position: absolute;
 	bottom: 0;
 	left: 0;	
+	background-color: #3ea0f042;
 }
 
 .tm-footer {
     width: 100%;
-    color: white;
+	background-color: #3ea0f000;
     z-index: 1001;
     padding: 0 11px 12px;
 }
@@ -242,14 +244,16 @@ button:focus { outline: none; }
 .tm-social-icons-container { margin-bottom: 30px; }
 
 .cd-full-width {
-	display: -ms-flexbox;
+	/*display: -ms-flexbox;*/
 	display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-pack: center;
-        justify-content: center;
+		justify-content: center;
+		
+	height: 100vh;
 }
 
 .cd-hero-slider p:last-child { margin-bottom: 0; }
@@ -351,7 +355,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 /*.no-js #loader-wrapper { display: none; }
 *//*============ Preloader ends ==================================*/
 
-.cd-hero-slider.small-screen { height: 100%; }
+.cd-hero-slider.small-screen { height: 100%;} /*MAYBE HERE*/
 
 .tm-navbar {
 	position: absolute;
@@ -421,12 +425,12 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 	margin-right: 8%;
 	margin-bottom: 10px;
 	display: none;
-	background: rgba(10, 63, 83, 0.521);
+	background: rgba(10, 63, 83, 0.678);
 	background-size: contain;
 	width: 85%;
 	text-align: left;
 	column-count: 1;
-	position: relative;
+	overflow: auto
 }
 
 .myImage{
@@ -468,8 +472,12 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 	margin: 0 auto;
 	position: fixed;
 	top: 8%;
-	left: 5%;
-	right: 5%;
+	left: 2%;
+	right: 2%;
+	padding-bottom: 500px;
+	padding-left: 25px;
+	padding-right: 25px;
+	overflow: auto;
 	
 }
 
@@ -520,7 +528,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
     width: 100%;
 }
 
-.tm-footer { padding: 50px 11px 20px; }
+.tm-footer { padding: 50px 11px 20px; position: relative;}
 .tm-footer-link { color: white; }
 .tm-footer-link:hover,
 .tm-footer-link:focus {
@@ -713,6 +721,7 @@ figure.effect-bubba:hover p {
 .cd-full-width .container-fluid.tm-page-width {
 	padding-left: 5px;
 	padding-right: 5px;
+	overflow: auto;
 }
 
 /*.tm-3-col-container {
@@ -810,7 +819,7 @@ figure.effect-bubba:hover p {
 	}*/
 	
 	/*.tm-3-col-container,*/
-	.cd-full-width .container-fluid.tm-page-width { max-width: 800px; }
+	.cd-full-width .container-fluid.tm-page-width { max-width: 800px;}
 	/*.tm-3-col-textbox { max-width: 400px; }	*/
 }
 
@@ -880,6 +889,7 @@ figure.effect-bubba:hover p {
 	.cd-full-width  {
 		padding-left: 20px;
 		padding-right: 20px;
+		 /*THIS IS ONE SPOT*/
 	}
 	.cd-full-width .container-fluid.tm-page-width {
 		padding-left: 30px;
@@ -953,7 +963,7 @@ figure.effect-bubba:hover p {
    
 /* Add a black background color to the top navigation bar */
 .topnav {
-	overflow: hidden;
+	overflow: auto;
 	background-color: #e9e9e9;
 	width: 300px;
 	margin-top: 20px;
