@@ -1740,24 +1740,57 @@ http://www.tooplate.com/view/2086-multi-color
                                     
                                     <div class="tm-img-gallery-info-container">                                    
                                         <h2 class="tm-text-title tm-gallery-title"><span class="tm-white">Search for character specific matchups</span></h2>
-                                        <p class="tm-text"><span class="tm-white">This is a paragraph.</span></p>                                     
+                                        
                                     </div>
                                     <div class="topnav">
 
-                                        <input id="searchbar" type="text" placeholder="Search videos..">
-                                        <button type="submit" onclick="getVideo()"><i class="fa fa-search"></i></button>
+                                        <input id="searchbar" type="text" placeholder="Search videos...">
+                                        <button id="searchbtn" type="submit" onclick="getVideo()"><i class="fa fa-search"></i></button>
                                     </div>
                                     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
                                         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
                                         crossorigin="anonymous">
                                     </script>
+                                    <script>
+                                    var input = document.getElementById('searchbar');
+
+                                    // Execute a function when the user releases a key on the keyboard
+                                    input.addEventListener("keyup", function(event) {
+                                    // Number 13 is the "Enter" key on the keyboard
+                                    if (event.keyCode === 13) {
+                                        // Cancel the default action, if needed
+                                        event.preventDefault();
+                                        // Trigger the button element with a click
+                                        document.getElementById('searchbtn').click();
+                                    }
+                                    });</script>
                                     
 									
                                     <script src="js/video.js"></script>
-                                    <iframe src=""></iframe>
-                                    <h3>Video Title</h3>
-                                    <p class="description">Video Description<p>
+                                    <script src="js/jquery-1.11.2.min.js"></script>
+                                    <iframe src="" id="vidframe1"></iframe>
+                                    <h3 id="vidtitle1">Video Title</h3>
+                                    <p class="description" id="viddesc1">Video Description<p>
                                     
+                                    
+                                    <iframe src="" id="vidframe2"></iframe>
+                                    <h3 id="vidtitle2">Video Title</h3>
+                                    <p class="description" id="viddesc2">Video Description<p>
+                                    
+                                    
+                                    <iframe src="" id="vidframe3"></iframe>
+                                    <h3 id="vidtitle3">Video Title</h3>
+                                    <p class="description" id="viddesc3">Video Description<p>
+                                    
+          
+                                    <iframe src="" id="vidframe4"></iframe>
+                                    <h3 id="vidtitle4">Video Title</h3>
+                                    <p class="description" id="viddesc4">Video Description<p>
+                                    
+                                    
+                                    <iframe src="" id="vidframe5"></iframe>
+                                    <h3 id="vidtitle5">Video Title</h3>
+                                    <p class="description" id="viddesc5">Video Description<p>
 									
 								</div>                                 
                             </div> <!-- .tm-img-gallery-container -->
