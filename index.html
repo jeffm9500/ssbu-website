@@ -57,12 +57,7 @@ http://www.tooplate.com/view/2086-multi-color
 
 </head>
 
-
-
     <body>
-
-
-        <div class = "row"></div>
 
         <!-- Content -->
         <div class="cd-hero">
@@ -101,7 +96,7 @@ http://www.tooplate.com/view/2086-multi-color
                 </nav>
             </div> 
 
-            <ul class="cd-hero-slider">
+            <div class="cd-hero-slider">
 
                 <!-- Page 1 Gallery One -->
                 <li class="selected">                    
@@ -1690,23 +1685,21 @@ http://www.tooplate.com/view/2086-multi-color
                     <div class="cd-full-width">
                         <div class="container-fluid js-tm-page-content" data-page-no="2" data-page-type="gallery">
                             <div class="tm-img-gallery-container">
-                                <div class = "tm-img-gallery-info-container">
+                                <div class="tm-img-gallery gallery-two">
+                                <!-- Gallery Two pop up connected with JS code below -->
+                                    <div class = "tm-img-gallery-info-container">
 
-                                    <h1 class="tm-text-title tm-gallery-title"><span class="tm-white">Matchups</span></h1>
-                                    <h2 class="tm-text-title tm-gallery-title"><span class="tm-white">Who would win this Matchup?</span></h2>
                 
 
-                                    <div class = "row">
-                                        <div id="mario" class="vote-item" style="display:block;background:rgba\(56, 181, 230, 0\);" onclick="renderVote()" onclick="renderVote()">
-                                            <!-- If you want the ability to close the container, add a close button -->
-                                            
-                                            <figure class = "Nicks-Fig">
-                                                <img src = "img/Mario.png" alt="Image" style = "float: left" class="img-fluid tm-img">
-                                            </figure>
-                                            
-                                            
-                                        </div>
-                                        <div id="donkeykong" class="vote-item" style="display:block;background:rgba\(56, 181, 230, 0\);" onclick="renderVote()" onclick="renderVote()">
+                <div id="mario" class="vote-item" style="display:true;background:rgba\(56, 181, 230, 0\);" onclick="renderVote()">
+                    <!-- If you want the ability to close the container, add a close button -->
+                    
+                    <figure class = "Nicks-Fig">
+                        <img src = "img/Mario.png" alt="Image" style = "float: left" class="img-fluid tm-img">
+                    </figure>
+                    </div>
+
+                                        <div id="donkeykong" class="vote-item" style="display:block;background:rgba\(56, 181, 230, 0\);"  onclick="renderVote()">
                                             <!-- If you want the ability to close the container, add a close button -->
                                             
                                             <figure class = "Nicks-Fig">
@@ -1776,28 +1769,8 @@ http://www.tooplate.com/view/2086-multi-color
                                             <figure class = "Nicks-Fig">
                                                 <img src = "img/Pikachu.png" alt="Image" style = "float: left" class="img-fluid tm-img">
                                             </figure>
+                                            </div>
                                             
-                                            
-                                        </div>
-                                        <div id="luigi" class="vote-item" style="display:none;background:rgba\(56, 181, 230, 0\);" onclick="renderVote()">
-                                            <!-- If you want the ability to close the container, add a close button -->
-                                            
-                                            <figure class = "Nicks-Fig">
-                                                <img src = "img/Luigi.png" alt="Image" style = "float: left" class="img-fluid tm-img">
-                                            </figure>
-                                            
-                                            
-
-                                    </div>
-
-                                    <div id="ness" class="vote-item" style="display:none;background:rgba\(56, 181, 230, 0\);" onclick="renderVote()">
-                                        <!-- If you want the ability to close the container, add a close button -->
-                                        
-                                        <figure class = "Nicks-Fig">
-                                            <img src = "img/Ness.png" alt="Image" style = "float: left" class="img-fluid tm-img">
-                                        </figure>
-                                        
-                                        
                                     </div>
                                     <div id="captainfalcon" class="vote-item" style="display:none;background:rgba(56, 181, 230, 0);" onclick="renderVote()">
                                         <!-- If you want the ability to close the container, add a close button -->
@@ -2429,7 +2402,7 @@ http://www.tooplate.com/view/2086-multi-color
 
                                 </div>
 
-                                <//div>
+                                </div>
 
 
                                 
