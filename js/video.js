@@ -11,15 +11,15 @@ function getVideo() {
       type: 'GET',
       url: 'https://www.googleapis.com/youtube/v3/search',
       data: {
-          key: 'AIzaSyDp5fHjmMvYDp9BwLvpCPf2lwAQg4BsTMU',
-          q: $("#searchbar").val() + ' ssbu',
+          key: 'AIzaSyDoqPTMMQoIGAndhnX17aKH-Y4IyiH8elU',
+          q: $("#searchbar").val() + " ssbu",
           part: 'snippet',
           maxResults: 5,
           type: 'video',
           videoEmbeddable: true,
       },
       success: function(data){
-          embedVideo(data)
+          embedVideo(data);
       },
       error: function(response){
           console.log("Request Failed");
