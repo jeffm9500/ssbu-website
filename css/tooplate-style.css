@@ -1027,13 +1027,14 @@ figure.effect-bubba:hover p {
   width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
+  color: black;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
-    display: block;
+	display: block;
   }
 }
 
@@ -1047,12 +1048,15 @@ figure.effect-bubba:hover p {
 
   padding: 0 16px;
 }
-
+.team{
+    color: black;
+}
 /* Clear floats */
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
+  color: black;
 }
 
 .title {
