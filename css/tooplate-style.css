@@ -80,6 +80,7 @@ a:focus {
 	padding-right: 10px;
 	background-color: rgba(255,255,255,0.7);
 	overflow: auto;
+	
 }
 
 .navbar-toggler {
@@ -425,6 +426,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 	width: 85%;
 	text-align: left;
 	column-count: 1;
+	position: relative;
 }
 
 .myImage{
@@ -440,7 +442,15 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 	margin-bottom: 150px;
 }
 
-
+.vote-item {
+	margin-bottom: 20px;
+	padding-left: 1px;
+	padding-right: 1px;
+	width: 100%;
+	float: left;
+	transition: transform .30s;
+	max-width: 40%;
+}
 
 .grid-item {
 	margin-bottom: 20px;
@@ -455,7 +465,12 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 
 .tm-img-gallery-container {
 	max-width: 320px;
-    margin: 0 auto;
+	margin: 0 auto;
+	position: fixed;
+	top: 8%;
+	left: 5%;
+	right: 5%;
+	
 }
 
 .tm-img-gallery {
@@ -1019,13 +1034,14 @@ figure.effect-bubba:hover p {
   width: 25%;
   margin-bottom: 16px;
   padding: 0 8px;
+  color: black;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
-    display: block;
+	display: block;
   }
 }
 
@@ -1039,12 +1055,15 @@ figure.effect-bubba:hover p {
 
   padding: 0 16px;
 }
-
+.team{
+    color: black;
+}
 /* Clear floats */
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
+  color: black;
 }
 
 .title {
