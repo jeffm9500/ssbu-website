@@ -592,7 +592,7 @@ figure.effect-bubba:hover p {
     position: relative;
     display: block;
     max-width: 100%;
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .cd-hero-slider h2 { font-size: 1.5em; }
