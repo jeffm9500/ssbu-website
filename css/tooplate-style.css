@@ -536,7 +536,7 @@ figure.effect-bubba p {
 }
 
 figure.effect-bubba:hover img {
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 figure.effect-bubba figcaption::before,
