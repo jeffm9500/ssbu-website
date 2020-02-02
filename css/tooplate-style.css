@@ -430,6 +430,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 	padding-right: 1px;
 	float: left;
 	width: 100%;
+	transition: transform .30s;
 }
 
 .grid-item:last-child { margin-bottom: 0; }
@@ -624,6 +625,10 @@ figure.effect-bubba:hover p {
     display: block;
     max-width: 100%;
     opacity: 1;
+}
+
+.grid-item:hover{
+	transform:scale(1.2);
 }
 
 .cd-hero-slider h2 { font-size: 1.5em; }
